@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gridiron Cards</title>
+<style>
+body { font-family: Arial; margin: 0; padding: 0; }
+header, footer { background: #2c3e50; color: white; padding: 1em; text-align: center; }
+nav a { margin: 0 1em; color: white; text-decoration: none; }
+.content { padding: 2em; }
+.cards { display: flex; flex-wrap: wrap; gap: 1em; }
+.card { border: 1px solid #ccc; padding: 1em; width: 200px; }
+form { display: flex; flex-direction: column; width: 300px; margin-top: 1em; }
+input, textarea { margin: 0.5em 0; padding: 0.5em; }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Gridiron Cards</h1>
+<nav>
+<a href="#home">Home</a>
+<a href="#catalog">Catalog</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="content" id="home">
+<h2>Welcome to Gridiron Cards</h2>
+<p>We specialize in vintage and modern American football cards. While you can't buy online, you can contact us for special requests or to place an order.</p>
+</div>
+
+<div class="content" id="catalog">
+<h2>Card Catalog</h2>
+<div class="cards">
+<div class="card">
+<h3>Tom Brady - 2000 Rookie</h3>
+<p>Topps Chrome, Mint Condition</p>
+</div>
+<div class="card">
+<h3>Joe Montana - 1981</h3>
+<p>Rookie Card, Excellent Condition</p>
+</div>
+<!-- Add more cards here -->
+</div>
+</div>
+
+<div class="content" id="about">
+<h2>About Us</h2>
+<p>We’ve been collecting and selling football cards since 1995. Whether you're hunting a rookie card or completing a set, we're here to help.</p>
+</div>
+
+<div class="content" id="contact">
+<h2>Contact Us</h2>
+<p>Call us at <strong>(123) 456-7890</strong> or fill out the form below:</p>
+<form action="mailto:your@email.com" method="POST" enctype="text/plain">
+<input type="text" name="Name" placeholder="Your Name" required>
+<input type="email" name="Email" placeholder="Your Email" required>
+<textarea name="Message" placeholder="What card are you looking for?" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</div>
+
+<footer>
+<p>&copy; 2025 Gridiron Cards | (123) 456-7890</p>
+</footer>
+
+</body>
+</html>
